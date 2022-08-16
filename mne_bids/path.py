@@ -790,7 +790,6 @@ class BIDSPath(object):
             # exception to catch
             datatype = _infer_datatype_from_path(fname)
             bids_path = get_bids_path_from_fname(fname, check=False)
-            bids_path.root = self.root
             bids_path.datatype = datatype
             bids_path.check = True
 
